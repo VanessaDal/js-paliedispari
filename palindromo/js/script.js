@@ -14,12 +14,13 @@ function reverseString(string){
     return arrReverse.join("")
 }
 
+//assegno alla variabile la parola invertita
 var wordReverse=reverseString(word)
 console.log(wordReverse)
 
 
 
-
+//creo funzione per controllare se la parola è palindroma e stampo. Ritorno true e false giusto per rendarla più generica e utilizzabile in altri contesti
 function isItPalindrome(word){
     reverseString(word);
     if (word===wordReverse){
@@ -31,4 +32,5 @@ function isItPalindrome(word){
     }
 }
 
+//chiamo la funzione
 isItPalindrome(word)
